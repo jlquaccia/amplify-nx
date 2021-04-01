@@ -16,9 +16,17 @@
   "npmScope": "ampush",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "ZGQxMzYyYjYtMTg3OC00Y2ZlLWE2MzktMjExNTE4NzIzYzMwfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -28,7 +36,9 @@
     },
     "partner-portal-e2e": {
       "tags": [],
-      "implicitDependencies": ["partner-portal"]
+      "implicitDependencies": [
+        "partner-portal"
+      ]
     }
   }
 }
